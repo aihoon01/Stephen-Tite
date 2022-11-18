@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1 id="title"></h1>
+    <h1 id="title">Survey_Form</h1>
     <p id="description"></p>
     <form id="survey-form">
-        <input id="text" name="text" type="text" required>
-        <input id="email" type="email" required>
-        <input id="number" type="number">
+        <label for="text" id="name-label">Enter your name:</label>
+        <input id="text" name="text" type="text" placeholder="Name" required>
+        <br>
+        <label for="email" id="email-label">Enter your email:</label>
+        <input id="email" type="email" placeholder="Email" required>
+        <br>
+        <label for="number" id="number-label">Enter your number:</label>
 
+        <input id="number" type="number" min="10" max="12" placeholder="Phone number"><br>
+        <select name="dropdown" id="dropdown">
+            <option value="Male"> Male</option>
+            <option value="Female">Female</option>
+            </select><br>
+        <label for="sex">Mr</label>
+        <input type="radio" id="sex" name="radio" value="Mr">
+        <label for="sex">Mrs</label>
+        <input type="radio" id="sex" name="radio" value="Mrs">
+        <br>
+        <label for="single">Single</label>
+        <input type="checkbox" id="" value="Single">
+        <label for="Married">Married</label>
+        <input type="checkbox" id="" value="Married">
+        <label for="Divorced">Divorced</label>
+        <input type="checkbox" id="" value="Divorced"><br>
+        <textarea name="textarea" id="comment" cols="30" rows="10">Enter your message:</textarea><br>
+        <input type="submit" name="" id="submit" value="send">
     </form>
 </body>
+
 </html>
